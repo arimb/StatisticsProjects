@@ -1,19 +1,8 @@
-import requests
+from functions import getTBAdata
 
-def getdata(url):
-    try:
-        ans = requests.get("https://www.thebluealliance.com/api/v3/"+url, "accept=application%2Fjson&X-TBA-Auth-Key=gl4GXuoqG8anLUrLo356LIeeQZk15cfSoXF72YT3mYkI38cCoAmReoCSSF4XWccQ").json()
-        if ans is not None:
-            return ans
-        else:
-            print("oops null " + url)
-            getdata(url)
-    except:
-        print("oops " + url)
-        getdata(url)
 def getregion(teamKey):
-    team = getdata("team/" + teamKey + "/simple")
-    districts = getdata("team/" + teamKey + "/districts")
+    team = getTBAdata("team/" + teamKey + "/simple")
+    districts = getTBAdata("team/" + teamKey + "/districts")
     if len(districts) != 0:
         return districts[0]["abbreviation"].upper()
     elif team["country"] not in ["USA", "Canada"]:
@@ -28,11 +17,11 @@ regions = {}
 for year in years:
     print(year)
     cmp_awards = []
-    events = getdata("events/"+str(year))
+    events = getTBAdata("events/"+str(year))
     for event in events:
         if event["event_type"] in [3, 4]:
             print(event["key"])
-            awards = getdata("event/"+event["key"]+"/awards")
+            awards = getTBAdata("event/"+event["key"]+"/awards")
             for award in awards:
                 if award["award_type"] in [0, 9, 10, 69]:
                     for recipient in award["recipient_list"]:
@@ -74,11 +63,11 @@ with open("region_award_competitiveness.csv", "w+") as file:
 #             print(event["key"])
 #             cmp = 0
 #             local = 0
-#             teams = getdata("event/" + event["key"] + "/teams/keys")
+#             teams = getTBAdata("event/" + event["key"] + "/teams/keys")
 #             for team in teams:
 #                 if team in cmp_awards:
 #                     cmp += 1
-#             awards = getdata("event/" + event["key"] + "/awards")
+#             awards = getTBAdata("event/" + event["key"] + "/awards")
 #             for award in awards:
 #                 if award["award_type"] in [0, 9, 10, 69]:
 #                     for recipient in award["recipient_list"]:

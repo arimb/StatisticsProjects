@@ -1,17 +1,5 @@
-import requests
+from functions import getTBAdata
 
-def getdata(url):
-    try:
-        ans = requests.get("https://www.thebluealliance.com/api/v3/" + url,
-                           "accept=application%2Fjson&X-TBA-Auth-Key=gl4GXuoqG8anLUrLo356LIeeQZk15cfSoXF72YT3mYkI38cCoAmReoCSSF4XWccQ").json()
-        if ans is not None:
-            return ans
-        else:
-            print("oops null " + url)
-            getdata(url)
-    except:
-        print("oops " + url)
-        getdata(url)
 def getregion(team):
     abv_table = {"AL": "Alabama",
                 "AK": "Alaska",
@@ -84,7 +72,7 @@ for year in years:
     page = 0
     yearly = {}
     while True:
-        teams = getdata("teams/" + str(year) + "/" + str(page) + "/simple")
+        teams = getTBAdata("teams/" + str(year) + "/" + str(page) + "/simple")
         if len(teams) == 0:
             break
         for team in teams:

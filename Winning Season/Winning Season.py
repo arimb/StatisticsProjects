@@ -1,11 +1,4 @@
-import requests
-
-def getdata(url):
-    try:
-        return requests.get(url, "accept=application%2Fjson&X-TBA-Auth-Key=gl4GXuoqG8anLUrLo356LIeeQZk15cfSoXF72YT3mYkI38cCoAmReoCSSF4XWccQ").json()
-    except:
-        print("oops " + url)
-        getdata(url)
+from functions import getTBAdata
 
 class Team:
     def __init__(self, status):
@@ -32,12 +25,12 @@ class Team:
 teams = {}
 file = open("winning_season.csv", "w+")
 
-events = getdata("https://www.thebluealliance.com/api/v3/events/2018")
+events = getTBAdata("events/2018")
 for event in events:
     if 0 <= event["event_type"] <= 3 or event["event_type"] == 5:
         if len(event["division_keys"]) == 0:
             print(event["key"])
-            statuses = getdata("https://www.thebluealliance.com/api/v3/event/"+str(event["key"])+"/teams/statuses")
+            statuses = getTBAdata("event/"+str(event["key"])+"/teams/statuses")
             for teamKey in statuses:
                 if teamKey in teams:
                     teams[teamKey].add_event(statuses[teamKey])

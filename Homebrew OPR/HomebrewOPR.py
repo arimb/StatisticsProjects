@@ -1,24 +1,12 @@
-import requests
 import statsmodels.api as sm
-
-def getdata(url):
-    try:
-        ans = requests.get("https://www.thebluealliance.com/api/v3/" + url, "accept=application%2Fjson&X-TBA-Auth-Key=gl4GXuoqG8anLUrLo356LIeeQZk15cfSoXF72YT3mYkI38cCoAmReoCSSF4XWccQ").json()
-        if ans is not None:
-            return ans
-        else:
-            print("oops null " + url)
-            getdata(url)
-    except:
-        print("oops " + url)
-        getdata(url)
+from functions import getTBAdata
 
 eventKey = input("Event Key: ")
-teams = getdata("event/"+eventKey+"/teams/keys")
+teams = getTBAdata("event/"+eventKey+"/teams/keys")
 
 matrix = []
 scores = []
-matches = getdata("event/"+eventKey+"/matches/simple")
+matches = getTBAdata("event/"+eventKey+"/matches/simple")
 for match in matches:
     for alliance in [match["alliances"]["red"], match["alliances"]["blue"]]:
         tmp = [0] * len(teams)
