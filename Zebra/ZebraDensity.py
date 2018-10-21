@@ -22,7 +22,7 @@ for match in os.listdir(dirpath):
             redblue = points[0][0] < 27
             for y in range(27):
                 for x in range(54):
-                    red[x if redblue else 53-x][y if redblue else 26-y] += sum([1 if math.sqrt((x-p[0])**2+(y-p[1])**2)<scale else 0 for p in points])/len(points)
+                    red[x if redblue else 53-x][y] += sum([1 if math.sqrt((x-p[0])**2+(y-p[1])**2)<scale else 0 for p in points])/len(points)
 
 with open("red.csv", "w+") as file:
     for y in range(27):
