@@ -1,31 +1,32 @@
-New York,-73.9387,40.6635
-Los Angeles,-118.4108,34.0194
+Name,Lng,Lat
+NewYork,-73.9387,40.6635
+LosAngeles,-118.4108,34.0194
 Chicago,-87.6818,41.8376
 Houston,-95.3909,29.7866
 Phoenix,-112.0901,33.5722
 Philadelphia,-75.1333,40.0094
-San Antonio,-98.5251,29.4724
-San Diego,-117.135,32.8153
+SanAntonio,-98.5251,29.4724
+SanDiego,-117.135,32.8153
 Dallas,-96.7665,32.7933
-San Jose,-121.8189,37.2967
+SanJose,-121.8189,37.2967
 Austin,-97.7544,30.3039
 Jacksonville,-81.6616,30.3369
-San Francisco,-123.0322,37.7272
+SanFrancisco,-123.0322,37.7272
 Columbus,-82.9848,39.9852
-Fort Worth,-97.3467,32.7815
+FortWorth,-97.3467,32.7815
 Indianapolis,-86.1459,39.7767
 Charlotte,-80.831,35.2078
 Seattle,-122.3509,47.6205
 Denver,-104.8811,39.7619
 Washington,-77.0172,38.9041
 Boston,-71.0202,42.332
-El Paso,-106.427,31.8484
+ElPaso,-106.427,31.8484
 Detroit,-83.1022,42.383
 Nashville,-86.785,36.1718
 Memphis,-89.9774,35.1028
 Portland,-122.65,45.537
-Oklahoma City,-97.5137,35.4671
-Las Vegas,-115.2601,36.2292
+OklahomaCity,-97.5137,35.4671
+LasVegas,-115.2601,36.2292
 Louisville,-85.6474,38.1654
 Baltimore,-76.6105,39.3
 Milwaukee,-87.9667,43.0633
@@ -34,19 +35,19 @@ Tucson,-110.8706,32.1531
 Fresno,-119.7934,36.7836
 Sacramento,-121.4686,38.5666
 Mesa,-111.7174,33.4019
-Kansas City,-94.551,39.1251
+KansasCity,-94.551,39.1251
 Atlanta,-84.4227,33.7629
-Long Beach,-118.1553,33.8092
+LongBeach,-118.1553,33.8092
 Omaha,-96.0451,41.2644
 Raleigh,-78.6418,35.8306
-Colorado Springs,-104.7607,38.8673
+ColoradoSprings,-104.7607,38.8673
 Miami,-80.2086,25.7752
-Virginia Beach,-76.0252,36.78
+VirginiaBeach,-76.0252,36.78
 Oakland,-122.2257,37.7698
 Minneapolis,-93.2683,44.9633
 Tulsa,-95.9023,36.1279
 Arlington,-97.1247,32.7007
-New Orleans,-89.9345,30.0534
+NewOrleans,-89.9345,30.0534
 Wichita,-97.3459,37.6907
 Cleveland,-81.6794,41.4785
 Tampa,-82.4797,27.9701
@@ -54,13 +55,13 @@ Bakersfield,-119.0183,35.3212
 Aurora,-104.6897,39.688
 Anaheim,-117.7601,33.8555
 Honolulu,-157.8476,21.3243
-Santa Ana,-117.883,33.7363
+SantaAna,-117.883,33.7363
 Riverside,-117.3932,33.9381
-Corpus Christi,-97.1734,27.7543
+CorpusChristi,-97.1734,27.7543
 Lexington,-84.4583,38.0407
 Stockton,-121.3133,37.9763
-St. Louis,-90.2446,38.6357
-Saint Paul,-93.1041,44.9489
+StLouis,-90.2446,38.6357
+SaintPaul,-93.1041,44.9489
 Henderson,-115.0357,36.0097
 Pittsburgh,-79.9766,40.4398
 Cincinnati,-84.5058,39.1402
@@ -72,11 +73,11 @@ Lincoln,-96.6803,40.8105
 Orlando,-81.2736,28.4166
 Irvine,-117.7713,33.6784
 Toledo,-83.5819,41.6641
-Jersey City,-74.0648,40.7114
-Chula Vista,-117.0152,32.6277
+JerseyCity,-74.0648,40.7114
+ChulaVista,-117.0152,32.6277
 Durham,-78.9029,35.9811
-Fort Wayne,-85.1439,41.0882
-St. Petersburg,-82.6441,27.762
+FortWayne,-85.1439,41.0882
+StPetersburg,-82.6441,27.762
 Laredo,-99.4892,27.5604
 Buffalo,-78.8597,42.8925
 Madison,-89.4299,43.0878
@@ -86,8 +87,8 @@ Scottsdale,-111.8611,33.6843
 Reno,-119.8499,39.5491
 Glendale,-112.1899,33.5331
 Norfolk,-76.2446,36.923
-Winston–Salem,-80.261,36.1027
-North Las Vegas,-115.0939,36.2857
+WinstonSalem,-80.261,36.1027
+NorthLasVegas,-115.0939,36.2857
 Gilbert,-111.7431,33.3103
 Chesapeake,-76.3018,36.6794
 Irving,-96.97,32.8577
@@ -96,5 +97,5 @@ Garland,-96.6303,32.9098
 Fremont,-121.9412,37.4945
 Richmond,-77.476,37.5314
 Boise,-116.2317,43.6002
-Baton Rouge,-91.1309,30.4422
-Des Moines,-93.6102,41.5726
+BatonRouge,-91.1309,30.4422
+DesMoines,-93.6102,41.5726

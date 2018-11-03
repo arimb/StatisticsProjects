@@ -1,7 +1,6 @@
 import csv
 import math
 import sys
-from functions import getTBAdata
 
 counties = {}
 with open("counties.csv") as file:
