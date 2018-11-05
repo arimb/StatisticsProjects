@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <idinfo>
+    <citation>
+      <citeinfo>
+        <origin/>
+        <origin/>
+        <pubdate>20140701</pubdate>
+        <title>United States National Transportation Atlas Interstate Highways, 2008</title>
+        <edition>2014</edition>
+        <geoform>vector digital data</geoform>
+        <serinfo>
+          <sername>Data and Maps for ArcGIS®</sername>
+          <issue>2014 - World, Europe, and United States</issue>
+        </serinfo>
+        <pubinfo>
+          <pubplace/>
+          <publish>Environmental Systems Research Institute (Redlands, Calif.)</publish>
+        </pubinfo>
+        <othercit>Location: \usa\trans</othercit>
+        <onlink>http://purl.stanford.edu/qn309jc5979</onlink>
+        <lworkcit>
+          <citeinfo>
+            <origin/>
+            <pubdate>20140701</pubdate>
+            <title>ESRI Data and Maps 2014</title>
+            <edition>14</edition>
+            <pubinfo>
+              <pubplace/>
+              <publish>Environmental Systems Research Institute (Redlands, Calif.)</publish>
+            </pubinfo>
+          </citeinfo>
+        </lworkcit>
+      </citeinfo>
+    </citation>
+    <descript>
+      <abstract>This line shapefile represents rural and urban interstate highways. U.S. National Transportation Atlas Interstate Highways is part of the National Highway Planning Network, published by the Federal Highway Administration as part of the National Transportation Atlas Databases for the United States. This layer is part of the 2014 ESRI Data and Maps collection for ArcGIS 10.2.</abstract>
+      <purpose>U.S. National Transportation Atlas Interstate Highways provides a comprehensive database of interstate highways from the nation's principal arterial highway system and the National Highway System. The data is generalized to improve draw performance and be used effectively at a national level.</purpose>
+    </descript>
+    <timeperd>
+      <timeinfo>
+        <sngdate>
+          <caldate>20080101</caldate>
+        </sngdate>
+      </timeinfo>
+      <current>publication date</current>
+    </timeperd>
+    <status>
+      <progress>Complete</progress>
+      <update>Annually</update>
+    </status>
+    <spdom>
+      <bounding>
+        <westbc>-158.090073</westbc>
+        <eastbc>-67.781193</eastbc>
+        <northbc>64.888216</northbc>
+        <southbc>21.273109</southbc>
+      </bounding>
+    </spdom>
+    <keywords>
+      <theme>
+        <themekt>lcsh</themekt>
+        <themekey>Express highways</themekey>
+        <themekey>Interstate highway system</themekey>
+        <themekey>Roads</themekey>
+      </theme>
+      <theme>
+        <themekt>ISO 19115 Topic Categories</themekt>
+        <themekey>transportation</themekey>
+      </theme>
+      <place>
+        <placekt>geonames</placekt>
+        <placekey>United States</placekey>
+      </place>
+      <temporal>
+        <tempkt>None</tempkt>
+        <tempkey>1997-2008</tempkey>
+      </temporal>
+    </keywords>
+    <accconst>The data are provided by multiple, third party data vendors under license to Esri for inclusion on Data &amp; Maps for ArcGIS® for use with Esri® software. Each data vendor has its own data licensing policies and may grant varying redistribution rights to end users. Please consult the redistribution rights below for this data set provided on Data &amp; Maps. As used herein, “Geodata” shall mean any digital data set consisting of geographic data coordinates and associated attributes. 
+
+The redistribution rights for this data set: Public domain data from U.S. government is freely redistributable with proper metadata and source attribution. 
+
+The terms and conditions below apply to all the data sets provided on Data &amp; Maps. 
+
+Proprietary Rights and Copyright: Licensee acknowledges that the Data and Related Materials contain proprietary and confidential property of Esri and its licensor(s). The Data and Related Materials are owned by Esri and its licensor(s) and are protected by United States copyright laws and applicable international copyright treaties and/or conventions. 
+
+Limited Warranty and Disclaimer: Esri warrants that the media upon which the Data and Related Materials are provided will be free from defects in materials and workmanship under normal use and service for a period of ninety (90) days from the date of receipt. 
+
+THE DATA AND RELATED MATERIALS ARE EXCLUDED FROM THE LIMITED WARRANTY, AND THE LICENSEE EXPRESSLY ACKNOWLEDGES THAT THE DATA CONTAINS SOME NONCONFORMITIES, DEFECTS, OR ERRORS. ESRI DOES NOT WARRANT THAT THE DATA WILL MEET LICENSEE'S NEEDS OR EXPECTATIONS; THAT THE USE OF THE DATA WILL BE UNINTERRUPTED; OR THAT ALL NONCONFORMITIES, DEFECTS, OR ERRORS CAN OR WILL BE CORRECTED. ESRI IS NOT INVITING RELIANCE ON THIS DATA, AND THE LICENSEE SHOULD ALWAYS VERIFY ACTUAL DATA. 
+
+EXCEPT FOR THE LIMITED WARRANTY SET FORTH ABOVE, THE DATA AND RELATED MATERIALS CONTAINED THEREIN ARE PROVIDED "AS-IS," WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. 
+
+HIGH RISK ACTIVITIES: 
+(A) THE DATA AND RELATED MATERIALS ARE NOT FAULT-TOLERANT AND ARE NOT DESIGNED, MANUFACTURED, OR INTENDED FOR USE OR RESALE FOR INSURANCE UNDERWRITING OR WITH CRITICAL HEALTH AND SAFETY OR ONLINE CONTROL EQUIPMENT IN HAZARDOUS ENVIRONMENTS THAT REQUIRE FAIL-SAFE PERFORMANCE, INCLUDING, BUT NOT LIMITED TO THE OPERATION OF NUCLEAR FACILITIES, NAVIGATION OR GUIDANCE (I.E., AIRCRAFT, NAUTICAL VEHICLE, ETC.), OR COMMUNICATION SYSTEMS, AIR TRAFFIC CONTROL, EMERGENCY RESPONSE, TERRORISM PREVENTION OR RESPONSE, LIFE SUPPORT, OR WEAPONS SYSTEMS ("HIGH RISK ACTIVITIES"). ESRI SPECIFICALLY DISCLAIMS ANY EXPRESS OR IMPLIED WARRANTY OF FITNESS FOR HIGH RISK ACTIVITIES. 
+
+(B) TO THE EXTENT PERMITTED BY LAW, LICENSEE AGREES TO INDEMNIFY, DEFEND, AND HOLD ESRI, ITS OFFICERS, DIRECTORS, EMPLOYEES, AGENTS, SUBCONTRACTORS, LICENSORS, SUCCESSORS, AND ASSIGNS HARMLESS FROM AND AGAINST ANY AND ALL LIABILITY, LOSSES, CLAIMS, EXPENSES (INCLUDING ATTORNEYS' FEES), DEMANDS, OR DAMAGES OF ANY KIND, INCLUDING DIRECT, INDIRECT, SPECIAL, PUNITIVE, INCIDENTAL, OR CONSEQUENTIAL DAMAGES, ARISING OUT OF OR IN ANY WAY CONNECTED WITH LICENSEE'S USE OR PERMITTING THE USE BY OTHERS OF THE DATA, AND VENDOR'S HARDWARE OR SOFTWARE FOR HIGH RISK ACTIVITIES. DELIVERY OF THE DATA, AND VENDOR'S HARDWARE OR SOFTWARE DOES NOT CONSTITUTE A WAIVER OF THE RIGHTS AND OBLIGATIONS SET FORTH IN THIS ARTICLE. 
+
+Exclusive Remedy and Limitation of Liability: The entire liability of Esri or its licensor(s) and Licensee's exclusive remedy shall be to terminate the Agreement upon Licensee returning the Data and Related Materials to Esri with a copy of Licensee's invoice/receipt and Esri returning the license fees paid to Licensee. 
+
+IN NO EVENT SHALL ESRI AND/OR ITS LICENSOR(S) BE LIABLE FOR COSTS OF PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOST PROFITS, LOST SALES, OR BUSINESS EXPENDITURES, INVESTMENTS, OR COMMITMENTS IN CONNECTION WITH ANY BUSINESS; LOSS OF ANY GOODWILL; OR FOR ANY INDIRECT, SPECIAL, INCIDENTAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES ARISING OUT OF THIS AGREEMENT OR USE OF THE DATA AND RELATED MATERIALS, HOWEVER CAUSED, ON ANY THEORY OF LIABILITY, AND WHETHER OR NOT ESRI OR ITS LICENSOR(S) HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. THESE LIMITATIONS SHALL APPLY NOTWITHSTANDING ANY FAILURE OF ESSENTIAL PURPOSE OF ANY EXCLUSIVE REMEDY. 
+
+Third Party Beneficiary: Esri's licensor(s) has (have) authorized Esri to (sub)distribute and (sub)license its (their) data as incorporated into the Data and Related Materials. As an intended third party beneficiary to this Agreement, the Esri licensor(s) is (are) entitled to directly enforce, in its own name, the rights and obligations undertaken by the Licensee and to seek all legal and equitable remedies as are afforded to Esri. 
+
+In the event that the data vendor(s) has (have) granted the end user permission to redistribute the Geodata, please use proper proprietary or copyright attribution for the various data vendor(s), and provide the associated metadata file(s) with the Geodata. In compliance with FGDC metadata standards, Esri has attempted to practice proper metadata methodologies by providing any data source information, descriptions, and file names to assist in this effort.
+</accconst>
+    <useconst>None</useconst>
+    <ptcontac>
+      <cntinfo>
+        <cntorgp>
+          <cntorg>Esri</cntorg>
+          <cntper>ArcGIS Content Team</cntper>
+        </cntorgp>
+        <cntaddr>
+          <addrtype>mailing and physical</addrtype>
+          <address>380 New York Street</address>
+          <city>Redlands</city>
+          <state>California</state>
+          <postal>92373-8100</postal>
+          <country>US</country>
+        </cntaddr>
+        <cntvoice>909-793-2853</cntvoice>
+        <cntfax>909-793-5953</cntfax>
+        <cntemail>info@esri.com</cntemail>
+        <hours>8:00 a.m.–5:00 p.m. Pacific time, Monday–Friday</hours>
+        <cntinst>In the United States– Please direct all inquiries regarding software/data pricing and consulting services to your local Esri Regional Office. For support, you may contact Esri Support Center by telephone (voice) between 5:00 a.m. and 5:00 p.m. Pacific time, Monday through Friday, by dialing 888-377-4575; facsimile (fax) available at 909-792-0960; electronic mail (e-mail) support@esri.com; or visit http://support.esri.com/; Esri holidays excluded. 
+
+Outside the United States– Please direct all inquiries regarding software/data pricing, sales, support, and consulting services to your local Esri Office. This information can be found at http://www.esri.com/about-esri/offices. For other questions or comments, you may contact Esri headquarters by e-mail, telephone, or fax or write to us.</cntinst>
+      </cntinfo>
+    </ptcontac>
+    <datacred>ESRI and U.S. Bureau of Transportation Statistics. (2014). United States National Transportation Atlas Interstate Highways, 2008. ESRI.</datacred>
+    <native>Microsoft Windows 7 Version 6.1 (Build 7601) Service Pack 1; Esri ArcGIS 10.2.2.3552</native>
+  </idinfo>
+  <dataqual>
+    <logic>The shapefile is converted to file geodatabase (FGDB) format using tools in ArcGIS. The geometry is checked, and if needed repaired.</logic>
+    <complete>After processing, the data set is checked for drawing display and number of records and file sizes compared with source materials.</complete>
+    <posacc>
+      <horizpa>
+        <horizpar>The original positional accuracy had a maximal positional error of ±80 meters, and then it was generalized to a tolerance of 0.003 decimal degrees. The positional accuracy is unknown.</horizpar>
+      </horizpa>
+    </posacc>
+    <lineage>
+      <srcinfo>
+        <srccite>
+          <citeinfo>
+            <origin/>
+            <origin/>
+            <pubdate>20020101</pubdate>
+            <title>National Highway Planning Network 4.0 (line)</title>
+            <edition>Version 4.0 (line)</edition>
+            <geoform>vector digital data</geoform>
+            <serinfo>
+              <sername>National Highway Planning Network</sername>
+              <issue>4.0 (line)</issue>
+            </serinfo>
+            <pubinfo>
+              <pubplace/>
+              <publish>Bureau of Transportation Statistics (BTS)</publish>
+            </pubinfo>
+            <othercit>From the National Transportation Atlas Databases (NTAD) 2002 CD–ROM.</othercit>
+            <onlink>http://www.bts.gov/gis/</onlink>
+          </citeinfo>
+        </srccite>
+        <srcscale>100000</srcscale>
+        <typesrc>CD-ROM</typesrc>
+        <srctime>
+          <timeinfo>
+            <sngdate>
+              <caldate>20020101</caldate>
+            </sngdate>
+          </timeinfo>
+          <srccurr>publication date</srccurr>
+        </srctime>
+        <srccitea>BTS - NHPN</srccitea>
+        <srccontr>Attribute and geospatial data</srccontr>
+      </srcinfo>
+      <srcinfo>
+        <srccite>
+          <citeinfo>
+            <origin/>
+            <pubdate>19980101</pubdate>
+            <title>National Geographic Road Atlas</title>
+            <pubinfo>
+              <pubplace/>
+              <publish>GeoSystems Global Corporation in association with National Geographic Maps and Melcher Media, Inc.</publish>
+            </pubinfo>
+          </citeinfo>
+        </srccite>
+        <typesrc>hardcopyPaper</typesrc>
+        <srctime>
+          <timeinfo>
+            <sngdate>
+              <caldate>19980101</caldate>
+            </sngdate>
+          </timeinfo>
+          <srccurr>publication date</srccurr>
+        </srctime>
+        <srccitea>Nat Geog Road Atlas</srccitea>
+        <srccontr>Attribute data</srccontr>
+      </srcinfo>
+      <srcinfo>
+        <srccite>
+          <citeinfo>
+            <origin/>
+            <title>ArcGIS Resource Centers ArcGIS Online services - USA Prime Imagery</title>
+            <geoform>raster digital data</geoform>
+            <pubinfo>
+              <pubplace/>
+              <publish>Esri</publish>
+            </pubinfo>
+            <othercit>Accessed the map service in August 2008. Copyright: © 2008 i-cubed; i-cubed, Ft. Collins, CO, USA</othercit>
+            <onlink>http://resources.esri.com/arcgisonlineservices/index.cfm?fa=content_detail&amp;contentID=F7EE515D-1422-2413-199DAEFAA2B134F9</onlink>
+          </citeinfo>
+        </srccite>
+        <typesrc>onLine</typesrc>
+        <srctime>
+          <timeinfo>
+            <sngdate>
+              <caldate>20080101</caldate>
+            </sngdate>
+          </timeinfo>
+          <srccurr>publication date</srccurr>
+        </srctime>
+        <srccitea>Esri ArcGIS Resource Centers ArcGIS Online services - USA Prime Imagery</srccitea>
+        <srccontr>Geospatial data</srccontr>
+      </srcinfo>
+      <srcinfo>
+        <srccite>
+          <citeinfo>
+            <origin/>
+            <pubdate>19970101</pubdate>
+            <title>National Highway Planning Network</title>
+            <edition>Version 2.1</edition>
+            <serinfo>
+              <sername>National Highway Planning Network</sername>
+              <issue>Version 2.1</issue>
+            </serinfo>
+            <pubinfo>
+              <pubplace/>
+              <publish>Bureau of Transportation Statistics</publish>
+            </pubinfo>
+          </citeinfo>
+        </srccite>
+        <srcscale>100000</srcscale>
+        <typesrc>CD-ROM</typesrc>
+        <srctime>
+          <timeinfo>
+            <sngdate>
+              <caldate>19970101</caldate>
+            </sngdate>
+          </timeinfo>
+          <srccurr>publication date</srccurr>
+        </srctime>
+        <srccitea>BTS - NHPN 2.1</srccitea>
+        <srccontr>Attribute data</srccontr>
+      </srcinfo>
+      <procstep>
+        <procdesc>The general processing steps for the creation of the National Highway Planning Network: - [1993] Conflation of attributes for rural highways from [National Highway Planning Network V1.1, Bruce Peterson, Oak Ridge National Laboratory, 1992] to [USGS Digital Line Graph (DLG-3, 1978) Series] road alignments using R-MATCH software developed by the Geographic Information Systems Group, University of Tennessee. - [1993] Digitizing and conversion of state supplied digital and map data. Line work geodetically controlled to match [USGS Digital Line Graph (DLG-3, 1978) Series] line work. - [1994] Integration of conflated version of [National Highway Planning Network V1.1, Bruce Peterson, Oak Ridge National Laboratory, 1992] and assimilated State Departments of Transportation data into a comprehensive topologically integrated network database. States edgematched and National Highway System attributes verified. - [1997] Integration of supplemental State Departments of Transportation data into the National Highway Planning Network Version 2. National Highway System attributes verified. - [1998] Integration of intermodal connectors links into the National Highway Planning Network Version 2. States edgematched and National Highway System attributes verified. - [2001] Update of National Highway System and Intermodal connector links into the National Highway Planning Network Version 4.0. States edgematched and National Highway System attributes verified.</procdesc>
+        <procdate>20020101</procdate>
+        <srcprod>BTS - NHPN</srcprod>
+      </procstep>
+      <procstep>
+        <procdesc>The following steps were performed by Esri: Copied U.S. National Transportation Atlas Highways and symbolized interstates, four-lane roads and the rest uniquely. Selected and kept all interstates, major thoroughfares and any other road segments needed to represent the major drive patterns depicted in a typical highway road atlas. Several features had no route name and were given values from its neighboring features or by referencing the National Geographic Road Atlas. Corrected hundreds of gaps in the road network. Generalized to a tolerance of 0.003 decimal degrees. Added attributes CLASS, NUMBER, and SUFFIX from Esri® Data &amp; Maps 2002 U.S. National Transportation Atlas Interstate Highways based on the ROUTE_NUM attribute. Unsplit features based on combining all attributes. Added and calculated attributes DIST_MILES and DIST_KM. Created ArcGIS® layer file (.lyr), projection file (.prj), and spatial indices. Converted the data set to SDC.</procdesc>
+        <srcused>BTS - NHPN 2.1</srcused>
+        <srcused>Nat Geog Road Atlas</srcused>
+        <srcused>BTS - NHPN</srcused>
+        <procdate>20021205</procdate>
+      </procstep>
+      <procstep>
+        <procdesc>The following steps were performed by Esri: Added Minnesota Drive in Anchorage, AK. Put value “S” in attributes ROUTE_NUM and CLASS, and calculated the values for attributes DIST_MILES and DIST_KM.</procdesc>
+        <srcused>BTS - NHPN</srcused>
+        <procdate>20050321</procdate>
+      </procstep>
+      <procstep>
+        <procdesc>The following steps were performed by Esri: Corrected a few known errors. Converted the data set to SDC. Created ArcGIS® layer file (.lyr), projection file (.prj), and spatial indices.</procdesc>
+        <srcused>Esri ArcGIS Resource Centers ArcGIS Online services - USA Prime Imagery</srcused>
+        <procdate>20081002</procdate>
+      </procstep>
+      <procstep>
+        <procdesc>Converted the dataset into a file geodatabase.</procdesc>
+        <procdate>20140401</procdate>
+      </procstep>
+    </lineage>
+  </dataqual>
+  <spdoinfo>
+    <direct>Vector</direct>
+    <ptvctinf>
+      <sdtsterm>
+        <sdtstype>String</sdtstype>
+        <ptvctcnt>692</ptvctcnt>
+      </sdtsterm>
+    </ptvctinf>
+  </spdoinfo>
+  <eainfo>
+    <detailed>
+      <enttyp>
+        <enttypl>intrstat</enttypl>
+        <enttypd>The lines represent a comprehensive network database of interstate highways within United States from the principal arterial highway system and National Highway System.</enttypd>
+        <enttypds>Bureau of Transportation Statistics</enttypds>
+      </enttyp>
+      <attr>
+        <attrlabl>FID</attrlabl>
+        <attrdef>Internal feature number.</attrdef>
+        <attrdefs>Esri</attrdefs>
+        <attrdomv>
+          <udom>Sequential unique whole numbers that are automatically generated.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Shape</attrlabl>
+        <attrdef>Feature geometry.</attrdef>
+        <attrdefs>Esri</attrdefs>
+        <attrdomv>
+          <udom>Coordinates defining the features.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>ROUTE_NUM</attrlabl>
+        <attrdef>A composite field for the road feature comprised of the primary sign route that identifies the class, sign route number that can include a directional indicator, and a qualifier. The first character identifies the class, the following characters up to but not including a blank identify the sign route number that can include a directional indicator, a blank, and the last character identifies the qualifier.</attrdef>
+        <attrdefs>Esri</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>Class, represented by the first character.</edomv>
+            <edomvd>(blank) - not signed, I - Interstate, U - U.S. route, S - State route, O - Off-Interstate business marker, C - County route, T - Township, M - Municipal, P - Parkway or Forest route marker, N- None of the above.</edomvd>
+            <edomvds>Bureau of Transportation Statistics</edomvds>
+          </edom>
+          <edom>
+            <edomv>Sign route number (can include a directional indicator), represented by all the following characters up to but not including a blank.</edomv>
+            <edomvd>Any combination of: A–Z, 0–9, N, S, E, W.</edomvd>
+            <edomvds>Bureau of Transportation Statistics</edomvds>
+          </edom>
+          <edom>
+            <edomvds>Bureau of Transportation Statistics</edomvds>
+            <edomv>A blank space.</edomv>
+            <edomvd>This separates the sign route number from the qualifier.</edomvd>
+          </edom>
+          <edom>
+            <edomvds>Bureau of Transportation Statistics</edomvds>
+            <edomv>Qualifier, represented by the last character when preceded by a blank.</edomv>
+            <edomvd>(blank) - No qualifier, not signed, or not applicable; A - Alternate route; B - Business route; P - Bypass; S - Spur; L - Loop; F - Proposed (future); D - Temporary (detour); T - Truck route; N - None of the above.</edomvd>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>CLASS</attrlabl>
+        <attrdef>The primary sign route that identifies the class of the road feature.</attrdef>
+        <attrdefs>Bureau of Transportation Statistics</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>Class, represented by the first character.</edomv>
+            <edomvd>(blank) - not signed, I - Interstate, U - U.S. route, S - State route, O - Off-Interstate business marker, C - County route, T - Township, M - Municipal, P - Parkway or Forest route marker, N- None of the above.</edomvd>
+            <edomvds>Bureau of Transportation Statistics</edomvds>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>NUMBER</attrlabl>
+        <attrdef>The primary sign route that identifies the sign route number, that can include a directional indicator, of the road feature.</attrdef>
+        <attrdefs>Bureau of Transportation Statistics</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomvds>Bureau of Transportation Statistics</edomvds>
+            <edomv>Sign route number (can include a directional indicator), represented by all the following characters up to but not including a blank.</edomv>
+            <edomvd>Any combination of: A–Z, 0–9, N, S, E, W.</edomvd>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>SUFFIX</attrlabl>
+        <attrdef>The primary sign route that identifies the qualifier, if any, of the road feature.</attrdef>
+        <attrdefs>Bureau of Transportation Statistics</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomvds>Bureau of Transportation Statistics</edomvds>
+            <edomv>Qualifier, represented by the last character when preceded by a blank.</edomv>
+            <edomvd>(blank) - No qualifier, not signed, or not applicable; A - Alternate route; B - Business route; P - Bypass; S - Spur; L - Loop; F - Proposed (future); D - Temporary (detour); T - Truck route; N - None of the above.</edomvd>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>DIST_MILES</attrlabl>
+        <attrdef>The length of the road feature in miles.</attrdef>
+        <attrdefs>Bureau of Transportation Statistics</attrdefs>
+        <attrdomv>
+          <udom>Calculated lengths for the features.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>DIST_KM</attrlabl>
+        <attrdef>The length of the road feature in kilometers.</attrdef>
+        <attrdefs>Bureau of Transportation Statistics</attrdefs>
+        <attrdomv>
+          <udom>Calculated lengths for the features.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Shape_Leng</attrlabl>
+      </attr>
+    </detailed>
+  </eainfo>
+  <distinfo>
+    <distrib>
+      <cntinfo>
+        <cntorgp>
+          <cntorg>Stanford Geospatial Center</cntorg>
+        </cntorgp>
+        <cntaddr>
+          <addrtype>physical</addrtype>
+          <address>Branner Earth Sciences Library</address>
+          <address>Mitchell Building, 2nd Floor</address>
+          <address>397 Panama Mall</address>
+          <city>Stanford</city>
+          <state>California</state>
+          <postal>94305</postal>
+        </cntaddr>
+        <cntvoice>650-723-2746</cntvoice>
+        <cntemail>brannerlibrary@stanford.edu</cntemail>
+      </cntinfo>
+    </distrib>
+    <distliab>See access and use constraints information.</distliab>
+  </distinfo>
+  <metainfo>
+    <metd>20150424</metd>
+    <metc>
+      <cntinfo>
+        <cntorgp>
+          <cntorg>Esri</cntorg>
+          <cntper>ArcGIS Content Team</cntper>
+        </cntorgp>
+        <cntaddr>
+          <addrtype>mailing and physical</addrtype>
+          <address>380 New York Street</address>
+          <city>Redlands</city>
+          <state>California</state>
+          <postal>92373-8100</postal>
+          <country>US</country>
+        </cntaddr>
+        <cntvoice>909-793-2853</cntvoice>
+        <cntfax>909-793-5953</cntfax>
+        <cntemail>info@esri.com</cntemail>
+        <hours>8:00 a.m.–5:00 p.m. Pacific time, Monday–Friday</hours>
+      </cntinfo>
+    </metc>
+    <metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn>
+    <metstdv>FGDC-STD-001-1998</metstdv>
+    <mettc>local time</mettc>
+  </metainfo>
+</metadata>
