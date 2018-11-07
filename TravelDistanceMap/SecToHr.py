@@ -14,9 +14,9 @@ for name in dir:
     with open("cities/" + name) as file:
         reader = csv.DictReader(file)
         for row in reader:
-            elements.append((row["FIPS"], row["Lng"], row["Lat"], str(float(row["Duration"])/3600), row["Density"]))
+            elements.append((row["FIPS"], row["Lng"], row["Lat"], str(float(row["Duration"])), row["Density"]))
 
-    with open("cities/" + str(cities[name[:name.index(".")]]) + " " + name, "w+") as file:
+    with open("cities/" + name[name.index(" ")+1:], "w+") as file:
         file.write("FIPS,Lng,Lat,Duration,Density\n")
         for element in elements:
             file.write(element[0] + "," + element[1] + "," + element[2] + "," + element[3] + "," + element[4] + "\n")

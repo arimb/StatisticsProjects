@@ -1,35 +1,37 @@
 cities = readtable('cities.csv', 'ReadRowNames', true);
-
 files = dir('paths/');
 
-for i = 1:length(files)-2
-    file = files(i+2);
+for i = 1:length(files)-42
+    file = files(i+42);
     name = extractBefore(file(1).name,strfind(file(1).name,'.'));
     disp(file(1).name);
+    path = csvread(strcat('paths\', file(1).name), 1,0);
     A = csvread(strcat('cities\', file(1).name), 1,1);
 
+    
     title(name);
     axesm('mercator', 'MapLatLimit', [23 55], 'MapLonLimit', [-130 -66]);
     geoshow(shaperead('usastatehi.shp', 'UseGeoCoords', true),'FaceColor', [.15 .5 .15]);
     geoshow(shaperead('mexstates\mexstates.shp', 'UseGeoCoords', true),'FaceColor', [.15 .5 .15]);
     geoshow(shaperead('Canada_Provinces\Canada_Provinces.shp', 'UseGeoCoords', true),'FaceColor', [.15 .5 .15]);
-    geoshow(shaperead('highways\intrstat.shp', 'UseGeoCoords', true));
+    
+    scatterm(path(:,1), path(:,2), (path(:,3)).^(1/3), 'red');
+    
+    geoshow(shaperead('highways\intrstat.shp', 'UseGeoCoords', true), 'LineWidth', 0.2);
     tightmap;
 
-    scatterm(cities{name, 'Lat'}, cities{name, 'Lng'}, 40, 'red', 'filled');
+    scatterm(cities{name, 'Lat'}, cities{name, 'Lng'}, 40, '#cc0099', 'filled');
 
     lng_lin = linspace(min(A(:,1)), max(A(:,1)), 50);
     lat_lin = linspace(min(A(:,2)), max(A(:,2)), 50);
     [LNG, LAT] = meshgrid(lng_lin, lat_lin);
-
     Z = griddata(A(:,1), A(:,2), A(:,3), LNG, LAT, 'cubic');
 
     colormap(hot)
     caxis([0, max(A(A(:,3)<max(A(:,3)),3))]);
-    cnt = contourm(LAT, LNG, Z, 'LineWidth', 4, 'LevelStep', 2);
-    %alpha(cnt, .5);
-
+    cnt = contourm(LAT, LNG, Z, 'LineWidth', 3, 'LevelStep', 2);
     colorbar('Location', 'southoutside');
-    saveas(gcf, strcat('path_img\', name, '.png'));
+    
+    saveas(gcf, strcat('img\', name, '.png'));
     clf;
 end
