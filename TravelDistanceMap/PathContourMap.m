@@ -12,12 +12,12 @@ for i = 1:length(files)-2-40
     title(name);
     axesm('mercator', 'MapLatLimit', [23 55], 'MapLonLimit', [-130 -66]);
     geoshow(shaperead('usastatehi.shp', 'UseGeoCoords', true),'FaceColor', [.15 .5 .15]);
-    geoshow(shaperead('mexstates\mexstates.shp', 'UseGeoCoords', true),'FaceColor', [.15 .5 .15]);
-    geoshow(shaperead('Canada_Provinces\Canada_Provinces.shp', 'UseGeoCoords', true),'FaceColor', [.15 .5 .15]);
+    geoshow(shaperead('shapefiles\mexstates\mexstates.shp', 'UseGeoCoords', true),'FaceColor', [.15 .5 .15]);
+    geoshow(shaperead('shapefiles\Canada_Provinces\Canada_Provinces.shp', 'UseGeoCoords', true),'FaceColor', [.15 .5 .15]);
     
     scatterm(path(:,1), path(:,2), (path(:,3)).^(1/2), [.8 0 .6]);
     
-    geoshow(shaperead('highways\intrstat.shp', 'UseGeoCoords', true), 'LineWidth', 0.2);
+    geoshow(shaperead('shapefiles\highways\intrstat.shp', 'UseGeoCoords', true), 'LineWidth', 0.2);
     tightmap;
 
     scatterm(cities{name, 'Lat'}, cities{name, 'Lng'}, 40, 'black', 'filled');
