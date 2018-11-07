@@ -16,11 +16,10 @@ Z = griddata(A(:,2), A(:,3), A(:,1), LNG, LAT, 'cubic');
 
 %colormap([1 1 0] .* (linspace(0,1,20))')
 colormap(hot)
-%sortrows(A, 'descend');
-%A([1 2],:)=[];
-caxis([min(A(:,1)), max(A(A(:,1)<max(A(:,1)),1))]);
-contourm(LAT, LNG, Z, 'LineWidth', 2, 'LevelStep', 1); % 'LevelList', [2:2:max(A(A(:,1)<max(A(:,1)),1))]);
-scatterm(A(:,3), A(:,2), 20, A(:,1), 'filled');
+sortrows(A);
+A(1,:)=[];
+caxis([0, A(1,1)]);
+cnt = contourm(LAT, LNG, Z, 'LineWidth', 2, 'LevelStep', 1);
 
 colorbar('Location', 'southoutside');
 saveas(gcf, 'time_contours.png');
