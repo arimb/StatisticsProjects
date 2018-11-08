@@ -8,8 +8,8 @@ with open("cities.csv") as file:
         coords[row["Name"]] = (row["Lng"], row["Lat"])
 
 cities = {}
-for name in os.listdir("durations"):
-    with open("durations/" + name) as file:
+for name in os.listdir("times"):
+    with open("times/" + name) as file:
         reader = csv.DictReader(file)
         tmp = []
         for row in reader:

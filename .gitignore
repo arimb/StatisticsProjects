@@ -1,2 +1,5 @@
 /.idea/
 __pycache__/*
+*.asv
+TravelDistanceMap/post.txt
+TravelDistanceMap/SecToHr.py
