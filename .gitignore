@@ -4,3 +4,4 @@ __pycache__/*
 TravelDistanceMap/post.txt
 TravelDistanceMap/SecToHr.py
 *.db
+*~$*
