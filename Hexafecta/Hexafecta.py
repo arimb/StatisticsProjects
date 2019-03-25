@@ -36,9 +36,9 @@ with open("hexafecta.csv", "w+") as file:
         file.write(team + "," + ",".join([str(a) for a in awards]) + "\n")
 
 with open("quinfecta.csv", "w+") as file:
-    file.write("Team,"+",".join(names)+"\n")
+    file.write("Team,"+",".join(names)+",Missing,\n")
     for team, awards in quinfecta.items():
-        file.write(team + "," + ",".join([str(a) for a in awards]) + "\n")
+        file.write(team + "," + ",".join([str(a) for a in awards]) + "," + names[awards.index(0)] + "\n")
 
 with open("all_teams.csv", "w+") as file:
     file.write("Team,"+",".join(names)+"\n")
