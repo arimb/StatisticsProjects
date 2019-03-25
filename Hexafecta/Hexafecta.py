@@ -25,7 +25,7 @@ for team in teams:
         try:
             hex[lookup.index(award["award_type"])] += 1
         except ValueError:
-            pass
+            if award["award_type"] == 26: hex[3] += 1
     if count_nonzero(hex) == 6: hexafecta[team] = hex
     elif count_nonzero(hex) == 5: quinfecta[team] = hex
     all_teams[team] = hex
@@ -41,6 +41,6 @@ with open("quinfecta.csv", "w+") as file:
         file.write(team + "," + ",".join([str(a) for a in awards]) + "," + names[awards.index(0)] + "\n")
 
 with open("all_teams.csv", "w+") as file:
-    file.write("Team,"+",".join(names)+"\n")
+    file.write("Team,"+",".join(names)+",Total\n")
     for team, awards in all_teams.items():
-        file.write(team + "," + ",".join([str(a) for a in awards]) + "\n")
+        file.write(team + "," + ",".join([str(a) for a in awards]) + "," + str(sum(awards)) + "\n")
