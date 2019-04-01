@@ -13,19 +13,19 @@ for year in years:
         if alliances is None: continue
         for i, a in enumerate(alliances):
             try:
-                if a["status"]["status"] == "won":
+                if a["status"] == "unknown": continue
+                if a["status"]["level"] == "f":
                     try:
                         print(i+1)
                         data[year][i] += 1
                     except:
                         traceback.print_exc()
                         print(a)
-                    break
             except:
                 traceback.print_exc()
                 print(a)
 
-with open("alliances.csv", "w+") as file:
+with open("finals.csv", "w+") as file:
     file.write("Year," + ",".join([str(x) for x in range(1,9)]) + "\n")
     for year, alliances in data.items():
         file.write(str(year) + ",")
