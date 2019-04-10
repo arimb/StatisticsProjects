@@ -26,6 +26,7 @@ for team in teams:
             hex[lookup.index(award["award_type"])] += 1
         except ValueError:
             if award["award_type"] == 26: hex[3] += 1
+            if award["award_type"] == 38: hex[4] += 1
     if count_nonzero(hex) == 6: hexafecta[team] = hex
     elif count_nonzero(hex) == 5: quinfecta[team] = hex
     all_teams[team] = hex
