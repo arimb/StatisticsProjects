@@ -1,56 +1,68 @@
-from functions import getTBAdata
+from functions import get_tba_data
 
 def getregion(team):
     abv_table = {"AL": "Alabama",
-                "AK": "Alaska",
-                "AZ": "Arizona",
-                "AR": "Arkansas",
-                "CA": "California",
-                "CO": "Colorado",
-                "CT": "Connecticut",
-                "DE": "Delaware",
-                "FL": "Florida",
-                "GA": "Georgia",
-                "HI": "Hawaii",
-                "ID": "Idaho",
-                "IL": "Illinois",
-                "IN": "Indiana",
-                "IA": "Iowa",
-                "KS": "Kansas",
-                "KY": "Kentucky",
-                "LA": "Louisiana",
-                "ME": "Maine",
-                "MD": "Maryland",
-                "MA": "Massachusetts",
-                "MI": "Michigan",
-                "MN": "Minnesota",
-                "MS": "Mississippi",
-                "MO": "Missouri",
-                "MT": "Montana",
-                "NE": "Nebraska",
-                "NV": "Nevada",
-                "NH": "New Hampshire",
-                "NJ": "New Jersey",
-                "NM": "New Mexico",
-                "NY": "New York",
-                "NC": "North Carolina",
-                "ND": "North Dakota",
-                "OH": "Ohio",
-                "OK": "Oklahoma",
-                "OR": "Oregon",
-                "PA": "Pennsylvania",
-                "RI": "Rhode Island",
-                "SC": "South Carolina",
-                "SD": "South Dakota",
-                "TN": "Tennessee",
-                "TX": "Texas",
-                "UT": "Utah",
-                "VT": "Vermont",
-                "VA": "Virginia",
-                "WA": "Washington",
-                "WV": "West Virginia",
-                "WI": "Wisconsin",
-                "WY": "Wyoming"}
+                 "AK": "Alaska",
+                 "AZ": "Arizona",
+                 "AR": "Arkansas",
+                 "CA": "California",
+                 "CO": "Colorado",
+                 "CT": "Connecticut",
+                 "DE": "Delaware",
+                 "FL": "Florida",
+                 "GA": "Georgia",
+                 "HI": "Hawaii",
+                 "ID": "Idaho",
+                 "IL": "Illinois",
+                 "IN": "Indiana",
+                 "IA": "Iowa",
+                 "KS": "Kansas",
+                 "KY": "Kentucky",
+                 "LA": "Louisiana",
+                 "ME": "Maine",
+                 "MD": "Maryland",
+                 "MA": "Massachusetts",
+                 "MI": "Michigan",
+                 "MN": "Minnesota",
+                 "MS": "Mississippi",
+                 "MO": "Missouri",
+                 "MT": "Montana",
+                 "NE": "Nebraska",
+                 "NV": "Nevada",
+                 "NH": "New Hampshire",
+                 "NJ": "New Jersey",
+                 "NM": "New Mexico",
+                 "NY": "New York",
+                 "NC": "North Carolina",
+                 "ND": "North Dakota",
+                 "OH": "Ohio",
+                 "OK": "Oklahoma",
+                 "OR": "Oregon",
+                 "PA": "Pennsylvania",
+                 "RI": "Rhode Island",
+                 "SC": "South Carolina",
+                 "SD": "South Dakota",
+                 "TN": "Tennessee",
+                 "TX": "Texas",
+                 "UT": "Utah",
+                 "VT": "Vermont",
+                 "VA": "Virginia",
+                 "WA": "Washington",
+                 "WV": "West Virginia",
+                 "WI": "Wisconsin",
+                 "WY": "Wyoming",
+                 "ON": "Ontario",
+                 "QC": "Quebec",
+                 "NS": "Nova Scotia",
+                 "NB": "New Brunswick",
+                 "MB": "Manitoba",
+                 "BC": "British Columbia",
+                 "PE": "Prince Edward Island",
+                 "SK": "Saskatchewan",
+                 "AB": "Alberta",
+                 "NL": "Newfoundland and Labrador",
+                 "PR": "Puerto Rico",
+                 "DC": "District of Columbia"}
     # districts = getdata("team/" + team["key"] + "/districts")
     # if len(districts) != 0:
     #     return districts[0]["abbreviation"].upper()
@@ -65,23 +77,18 @@ def getregion(team):
 
 years = range(1992, 2019)
 regions = {}
-# teams_by_region = {}
 
 for year in years:
     print(year)
     page = 0
     yearly = {}
     while True:
-        teams = getTBAdata("teams/" + str(year) + "/" + str(page) + "/simple")
+        teams = get_tba_data("teams/" + str(year) + "/" + str(page) + "/simple")
         if len(teams) == 0:
             break
         for team in teams:
             print(team["key"])
-            # if team["key"] in teams_by_region:
-            #     region = teams_by_region[team["key"]]
-            # else:
             region = getregion(team)
-                # teams_by_region[team["key"]] = region
             if region not in yearly:
                 yearly[region] = 0
             yearly[region] += 1
@@ -92,7 +99,7 @@ for year in years:
         regions[region].append((year, yearly[region]))
 
 print(regions)
-with open("region_timeline_.csv", "w+") as file:
+with open("region_timeline_2019.csv", "w+") as file:
     file.write("Region,")
     for year in years:
         file.write(str(year) + ",")
