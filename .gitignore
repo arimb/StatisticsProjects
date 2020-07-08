@@ -2,4 +2,7 @@
 TravelDistanceMap/post.txt
 TravelDistanceMap/SecToHr.py
 *.db
-*~$*
+~$*
+/venv/*
+/.idea/*
+/__pycache__/*
