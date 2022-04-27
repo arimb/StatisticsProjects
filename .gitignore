@@ -6,3 +6,5 @@ TravelDistanceMap/SecToHr.py
 /venv/*
 /.idea/*
 /__pycache__/*
+*~$*
+.venv/*
