@@ -5,13 +5,14 @@ import requests
 def get_team(username, retries=0):
     try:
         ans = requests.get('https://www.chiefdelphi.com/users/' + username + '.json').json()
-        return ans['user']['user_fields']['1']
+        return ans['user']['user_fields']['1'], ans['user']['user_fields']['2']
     except:
         print("oops " + username)
         if retries > 1:
-            return None
+            return None, None
         else:
             return get_team(username, retries+1)
+        
 
 def get_users(page):
     try:
@@ -41,6 +42,8 @@ with open('elos.csv', 'r') as file:
     for row in reader:
         elos[row[0]] = row[1]
 
+with open('users.csv', 'w+') as file:
+    file.write('User,Team #,Rookie Year,Likes Recieved,Likes Given,Topics,Replies,Viewed,Read,Visits,Elo\n')
 
 page = 0
 flag = False
@@ -50,35 +53,39 @@ while True:
     users_raw = get_users(page)
 
     for user in users_raw:
-        if user['days_visited'] < 2:
+        if user['days_visited'] < 1:
             flag = True
             break
         name = user['user']['username']
-        team = get_team(name)
-        if team is not None and team in elos:
-            users.append({'username': name,
-                          'days': str(user['days_visited']),
-                          'group': str(group(user['days_visited'])),
-                          'team': team,
-                          'elo': elos[team]})
-        else:
-            users.append({'username': name,
-                          'days': str(user['days_visited']),
-                          'group': str(group(user['days_visited'])),
-                          'team': '',
-                          'elo': ''})
+        team, rookie = get_team(name)
+        users.append({'username': name,
+                      'team': str(team),
+                      'rookie': str(rookie),
+                      'likes_received': str(user['likes_received']),
+                      'likes_given': str(user['likes_given']),
+                      'topics': str(user['topic_count']),
+                      'replies': str(user['post_count']),
+                      'viewed': str(user['topics_entered']),
+                      'read': str(user['posts_read']),
+                      'days': str(user['days_visited']),
+                      'elo': (elos[team] if team in elos else '')})
         print(users[-1])
 
     if flag:
         break
 
     with open('users.csv', 'a') as file:
-##        file.write('User,Days Visited,Group,Team #,Elo\n')
         for user in users:
             file.write(user['username'] + ',' +
-                       user['days'] + ',' +
-                       user['group'] + ',' +
                        user['team'] + ',' +
+                       user['rookie'] + ',' +
+                       user['likes_received'] + ',' +
+                       user['likes_given'] + ',' +
+                       user['topics'] + ',' +
+                       user['replies'] + ',' +
+                       user['viewed'] + ',' +
+                       user['read'] + ',' +
+                       user['days'] + ',' +
                        user['elo'] + '\n')
 
     page += 1
