@@ -2,7 +2,7 @@ import csv
 import os
 
 coords = {}
-with open("TravelDistanceMap/cities.csv") as file:
+with open("TravelDistanceMap/convention_centers.csv", "r", encoding='utf-8-sig') as file:
     reader = csv.DictReader(file)
     for row in reader:
         coords[row["Name"]] = (row["Lng"], row["Lat"])

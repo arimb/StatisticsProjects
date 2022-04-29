@@ -2,6 +2,7 @@ import requests
 import csv
 from retrying import retry
 import polyline
+import os
 
 @retry(wait_fixed=5000)
 def get_route(coords):
@@ -20,13 +21,15 @@ with open("TravelDistanceMap/team_counties.csv") as file:
 num = len(counties)
 
 cities = {}
-with open("TravelDistanceMap/cities.csv") as file:
+with open("TravelDistanceMap/convention_centers.csv", "r", encoding='utf-8-sig') as file:
     reader = csv.DictReader(file)
     for row in reader:
         cities[row["Name"]] = (row["Lng"], row["Lat"])
 
+done = os.listdir("TravelDistanceMap/cities")
 
 for city, city_pos in cities.items():
+    if (city+".csv") in done: continue
     print(city)
     steps = {}
     with open("TravelDistanceMap/cities/" + city + ".csv", "w") as file:
