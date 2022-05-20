@@ -2,7 +2,6 @@ import csv
 import json
 from scipy.spatial import distance
 import tbapy
-import pickle
 
 with open('TravelDistanceMap2/all_team_locations_2022.json', 'r') as file:
     tmp_teams = json.load(file)
@@ -18,15 +17,9 @@ with open('TravelDistanceMap2/counties.csv', 'r') as file:
     for row in reader:
         counties[row["FIPS"]] = {"Coord": (float(row["lat"]), float(row["lng"])), "Count": 0}
 
-# tba = tbapy.TBA('gl4GXuoqG8anLUrLo356LIeeQZk15cfSoXF72YT3mYkI38cCoAmReoCSSF4XWccQ')
-# current_teams = tba.teams(year=2022, keys=True)
-# with open('TravelDistanceMap2/current_teams.pkl', 'wb') as file:
-#     pickle.dump(current_teams, file)
+tba = tbapy.TBA('gl4GXuoqG8anLUrLo356LIeeQZk15cfSoXF72YT3mYkI38cCoAmReoCSSF4XWccQ')
+current_teams = tba.teams(year=2022, keys=True)
 
-with open('TravelDistanceMap2/current_teams.pkl', 'rb') as file:
-    current_teams = pickle.load(file)
-
-# for team_key, team in all_teams.items():
 for team_key in current_teams:
     if team_key not in all_teams: continue
     closest = min([(distance.euclidean(county["Coord"], all_teams[team_key]), county_key) for county_key, county in counties.items()])
