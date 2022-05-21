@@ -6,7 +6,7 @@ from mpl_toolkits.basemap import Basemap
 import matplotlib.pyplot as plt
 import matplotlib.colors as colors
 
-DURATION_LIMIT = 10 # hours
+DURATION_LIMIT = 20 # hours
 
 durations = OrderedDict()
 conv_center_durations = OrderedDict()
@@ -61,7 +61,7 @@ map.drawstates(linewidth=0.25, zorder=1)
 x,y = map([float(conv_center_coords[key][1]) for key in conv_center_teams.keys()],
           [float(conv_center_coords[key][0]) for key in conv_center_teams.keys()])
 norm = colors.Normalize(list(conv_center_teams.values())[0], list(conv_center_teams.values())[-1])
-map.scatter(x, y, c=list(conv_center_teams.values()), s=30, marker='s', cmap='winter', norm=norm, edgecolors='k', linewidth=0.5, zorder=999)
+map.scatter(x, y, c=list(conv_center_teams.values()), s=30, marker='s', cmap='winter_r', norm=norm, edgecolors='k', linewidth=0.5, zorder=999)
 plt.colorbar(label='teams', cmap='winter_r', norm=norm, location='bottom', shrink=0.5, pad=0.05, format='%d')
 plt.title('FRC Teams Within {} Hours Driving to US Cities'.format(DURATION_LIMIT))
 plt.savefig('TravelDistanceMap2/map_teams_{}.png'.format(DURATION_LIMIT))
@@ -77,7 +77,7 @@ map.drawstates(linewidth=0.25, zorder=1)
 x,y = map([float(conv_center_coords[key][1]) for key in conv_center_durations.keys()],
           [float(conv_center_coords[key][0]) for key in conv_center_durations.keys()])
 norm = colors.Normalize(list(conv_center_durations.values())[0], list(conv_center_durations.values())[-1])
-map.scatter(x, y, c=list(conv_center_durations.values()), s=30, marker='s', cmap='winter_r', norm=norm, edgecolors='k', linewidth=0.5, zorder=999)
+map.scatter(x, y, c=list(conv_center_durations.values()), s=30, marker='s', cmap='winter', norm=norm, edgecolors='k', linewidth=0.5, zorder=999)
 plt.colorbar(label='hours', cmap='winter', norm=norm, location='bottom', shrink=0.5, pad=0.05, format='%d')
 plt.title('Avg Driving Time within {} Hours to US Cities'.format(DURATION_LIMIT))
 plt.savefig('TravelDistanceMap2/map_limit_{}.png'.format(DURATION_LIMIT))
