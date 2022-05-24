@@ -1,0 +1,8 @@
+# Champs Travel Map
+
+Raw data for the distance from every county to every convention center city can be found in [durations_by_county.csv](https://github.com/arimb/StatisticsProjects/blob/master/TravelDistanceMap2/durations_by_county.csv). This data was the nfiltered to find the number of teams and average driving distance when limiting the duration to 10, 15, and 20 hrs. The list of teams within the range are in durations_teams_{}.csv and the average driving duration for those teams is in durations_limit_{}.csv.
+
+If you want to run the calculations for yourself, the code is run as follows:
+1. [county_count.py](https://github.com/arimb/StatisticsProjects/blob/master/TravelDistanceMap2/county_count.py) takes in the list of counties' coordinates in [counties.csv](https://github.com/arimb/StatisticsProjects/blob/master/TravelDistanceMap2/counties.csv) and outputs the a list of the number of teams closest to each county with at least one team in [counties.json](https://github.com/arimb/StatisticsProjects/blob/master/TravelDistanceMap2/counties.json).
+2. [distances.py](https://github.com/arimb/StatisticsProjects/blob/master/TravelDistanceMap2/distances.py) calculates the driving duration between every convention center and every county and outputs the raw data into [durations_by_county.csv](https://github.com/arimb/StatisticsProjects/blob/master/TravelDistanceMap2/durations_by_county.csv).
+3. [duration_map.py](https://github.com/arimb/StatisticsProjects/blob/master/TravelDistanceMap2/duration_map.py) returns tables and plots maps of the number of teams within a certain duration and those teams' average driving duration.
