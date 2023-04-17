@@ -7,4 +7,4 @@ TravelDistanceMap/SecToHr.py
 /.idea/*
 /__pycache__/*
 *~$*
-.venv/*
+.venv*/*
